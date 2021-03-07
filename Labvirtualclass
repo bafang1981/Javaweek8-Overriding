@@ -1,0 +1,49 @@
+/**
+ * 
+ */
+/**
+ * @author Alino
+ *
+ */
+
+	
+	
+	
+
+public class VirtualClassjv {
+	public void teach() {
+		System.out.println("each instructor give a direction for his class");
+	}
+}
+class MathClass extends VirtualClassjv {
+	public void teach() {
+		System.out.println("instuctor starts with a video explaining the topic of the day. Then the lecturer goes through a set of problems.");
+	}
+}
+class PhilosophyClass extends VirtualClassjv {
+	public void teach() {
+		System.out.println(" instructor gives an audio only experience followed by a recorded discussion between students.");
+	}
+}
+class FrenchClass extends VirtualClassjv {
+	public void teach() {
+		System.out.println("instructor plays video and ask questions");
+	}
+}
+
+class Main {
+	public static void main(String[] args) {
+
+		VirtualClassjv myVirtualClass = new VirtualClassjv();  				// Creates a Virtual class object
+		VirtualClassjv myMathClass = new MathClass();  					// Create a Math class object
+		VirtualClassjv myPhilosophyClass = new PhilosophyClass(); 		// Create a Philosophy class object  
+		VirtualClassjv myFrenchClass = new FrenchClass(); 			 
+				 		
+		myVirtualClass.teach();
+		myMathClass.teach();
+		myPhilosophyClass.teach();
+		myFrenchClass.teach();
+		
+	
+}
+	}
